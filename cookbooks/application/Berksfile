@@ -1,0 +1,7 @@
+source 'https://supermarket.chef.io'
+
+cookbook 'apache2', path: '../apache2'
+cookbook 'mysql', path: '../mysql'
+cookbook 'php', path: '../php'
+
+metadata
