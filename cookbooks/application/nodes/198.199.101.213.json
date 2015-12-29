@@ -1,0 +1,8 @@
+{
+  "run_list": [
+    "recipe[application::default]"
+  ],
+  "automatic": {
+    "ipaddress": "198.199.101.213"
+  }
+}

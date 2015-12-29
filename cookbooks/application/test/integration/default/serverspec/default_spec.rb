@@ -8,7 +8,7 @@ describe 'application::default' do
     its(:content) { should match /DirectoryIndex index.php/ }
   end
 
-  describe file('/var/www/info.php') do
-    its(:content) { should match /phpinfo();/ }
+  describe file('/var/www/html/info.php') do
+    its(:content) { should match /.+phpinfo();.+/ }
   end
 end

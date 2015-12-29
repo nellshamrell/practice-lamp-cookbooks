@@ -12,6 +12,11 @@ template '/etc/apache2/mods-enabled/dir.conf' do
   source 'dir.conf.erb'
 end
 
-template '/var/www/info.php' do
+service 'apache2' do
+  action :restart
+end
+
+template '/var/www/html/info.php' do
   source 'info.php.erb'
 end
+
